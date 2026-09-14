@@ -10,7 +10,7 @@
 
 HF = https://huggingface.co/datasets/ronke21/HeRE
 
-Gold columns: `item_id, docid, title, text, subject, predicate, object, label, annotator2_label, notes, word_count` (+ `selection_reason` in the test set: `new_predicate` 203, `depth_boost` 97, `silver_validation_200` 200). `label` is the adjudicated label used in every table of the paper; `annotator2_label` is the second annotator's blind label. Inter-annotator agreement before adjudication: Cohen's kappa 0.809 (validation), 0.757 (test).
+Gold columns: `item_id, docid, title, text, subject, predicate, object, label, annotator2_label, notes, word_count` (`selection_reason` is `validation` in the validation set and `new_predicate` 203, `depth_boost` 97, `silver_validation_200` 200 in the test set). `label` is the adjudicated label used in every table of the paper; `annotator2_label` is the second annotator's blind label. Inter-annotator agreement before adjudication: Cohen's kappa 0.809 (validation), 0.757 (test).
 
 The 499 test rows that originate from the silver corpus are withheld from every silver and KG file (`src/analysis/build_here_kg.py::test_row_mask`). Do not train on them.
 
