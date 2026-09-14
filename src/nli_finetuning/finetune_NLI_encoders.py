@@ -662,7 +662,7 @@ def main() -> None:
             print(
                 f"[FATAL] Data file not found: {p}\n"
                 "Run the mrl_eval data ingestion before this script:\n"
-                "  cd /home/nlp/ronke21\n"
+                "  cd /path/to\n"
                 "  bash mrl_eval/datasets/download_raw_data.sh\n"
                 "  bash mrl_eval/datasets/ingest_all_datasets.sh\n"
                 "Then re-run this script."
