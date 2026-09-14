@@ -17,7 +17,7 @@ Datasets are on Hugging Face: **https://huggingface.co/datasets/ronke21/HeRE** (
 | 5 API LLMs, few-shot | GPT-5.4 | 0.921 |
 | Baseline: CROCODILE's XLM-R XNLI filter | as published / tuned | 0.406 / 0.784 |
 
-Held-out test set (Gemma-4-31B-it): 0.844 overall, 0.944 on predicates seen in validation, 0.776 on 203 unseen predicates. Published `agree3` label on the test rows it covers (66.8%): precision 0.899, recall 0.934, F1 0.916. Mean 95% bootstrap CI half-width on 500 examples: ±0.022; the top five configurations are statistically indistinguishable.
+Held-out test set (Gemma-4-31B-it): 0.844 overall, 0.944 on predicates seen in validation, 0.776 on 203 unseen predicates. Link prediction on HeRE-KG (TransE, three seeds): the denoised graph beats a size-matched random control by 24% relative MRR. Full result files are indexed in `results/README.md`. Published `agree3` label on the test rows it covers (66.8%): precision 0.899, recall 0.934, F1 0.916. Mean 95% bootstrap CI half-width on 500 examples: ±0.022; the top five configurations are statistically indistinguishable.
 
 ## Layout
 
