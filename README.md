@@ -46,6 +46,21 @@ results/here_kg/      HeRE-KG statistics and the ego-network edge list; figures/
 results/re_pilot/     mmBERT fine-tuning pilot on denoised vs raw data
 ```
 
+## Fine-tuned models
+
+The HebNLI-fine-tuned denoisers behind the released signals and the per-strategy winners are on the Hub (private until publication):
+
+| Model | Role in HeRE | Repo |
+|---|---|---|
+| DictaLM-3.0-24B (Thinking) HebNLI LoRA | Strategy 2; one of the three `agree3` models behind the published label | https://huggingface.co/ronke21/hebnli-dictalm-3.0-24b-lora |
+| NeoDictaBERT HebNLI | Strategy 1; deployed signal `encoder_nli__neodictabert` | https://huggingface.co/ronke21/hebnli-neodictabert |
+| XLM-RoBERTa-large HebNLI | Strategy 1; deployed signal `encoder_nli__xlmroberta` | https://huggingface.co/ronke21/hebnli-xlm-roberta-large |
+| XLM-RoBERTa-XL HebNLI | Strategy 1 best (F1 0.779) | https://huggingface.co/ronke21/hebnli-xlm-roberta-xl |
+| Qwen3.5-35B-A3B-Base HebNLI LoRA | Strategy 2 best (F1 0.873) | https://huggingface.co/ronke21/hebnli-qwen3.5-35b-a3b-lora |
+| Gemma-4-31B HebNLI LoRA | Strategy 2 (F1 0.849) | https://huggingface.co/ronke21/hebnli-gemma-4-31b-lora |
+
+The Strategy 4 signals (Gemma-4-31B-it, Gemma-3-27B-it, DictaLM-3.0-24B-Base) are prompted public models; prompts are in the code repository.
+
 ## Reproducing
 
 1. **Candidate corpus.** Run CROCODILE (https://github.com/Babelscape/crocodile) on the Hebrew Wikipedia dump and Wikidata; the output is the 3.12M-row `crocodile_heb25_full_dataset` CSV expected by `src/prepare_data/`.
