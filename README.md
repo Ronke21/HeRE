@@ -48,7 +48,7 @@ results/re_pilot/     mmBERT fine-tuning pilot on denoised vs raw data
 
 ## Fine-tuned models
 
-The HebNLI-fine-tuned denoisers behind the released signals and the per-strategy winners are on the Hub (private until publication):
+All HeRE resources are grouped in the Hub collection https://huggingface.co/collections/ronke21/here-hebrew-relation-extraction-6aa82bf21db8a9c955cf1cd1. The HebNLI-fine-tuned denoisers behind the released signals and the per-strategy winners:
 
 | Model | Role in HeRE | Repo |
 |---|---|---|
