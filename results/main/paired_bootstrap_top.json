@@ -1,0 +1,42 @@
+[
+  {
+    "best": "llm_clean_gpt54_he_triplet_5s_nc",
+    "vs": "llm_clean_gemini3_flash_en_triplet_5s_nc",
+    "mean_diff": 0.004179380538685086,
+    "lo95": -0.013564702361318811,
+    "hi95": 0.02188713651039989,
+    "p_a_better": 0.6746
+  },
+  {
+    "best": "llm_clean_gpt54_he_triplet_5s_nc",
+    "vs": "llm_clean_gemini3_flash_he_triplet_5s_nc",
+    "mean_diff": 0.005569456140274311,
+    "lo95": -0.011402800709176628,
+    "hi95": 0.02291083827813359,
+    "p_a_better": 0.7385
+  },
+  {
+    "best": "llm_clean_gpt54_he_triplet_5s_nc",
+    "vs": "llm_clean_gemma4_31b_it_he_template_2s_nc",
+    "mean_diff": 0.005798467840927657,
+    "lo95": -0.012623154454950535,
+    "hi95": 0.02433246699034838,
+    "p_a_better": 0.7234
+  },
+  {
+    "best": "llm_clean_gpt54_he_triplet_5s_nc",
+    "vs": "llm_clean_gemma4_31b_it_he_template_0s_nc",
+    "mean_diff": 0.006171221822553711,
+    "lo95": -0.012696082473550032,
+    "hi95": 0.025528159814411915,
+    "p_a_better": 0.7275
+  },
+  {
+    "best": "llm_clean_gpt54_he_triplet_5s_nc",
+    "vs": "llm_clean_gemma4_31b_it_he_template_5s_nc",
+    "mean_diff": 0.00731840003216034,
+    "lo95": -0.012196099517830185,
+    "hi95": 0.027153354870888158,
+    "p_a_better": 0.76
+  }
+]

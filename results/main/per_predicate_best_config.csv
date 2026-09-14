@@ -1,0 +1,40 @@
+family,best_config,predicate,n,pos_rate,f1
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,שפה רשמית,19,0.0,0.0
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,שפה שבשימוש,17,0.0,0.0
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,אזרחות,16,0.562,0.8
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,גובל עם,21,0.19,0.8571
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,חלק מתוך,11,0.818,0.8889
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,תת-קבוצה של,18,0.611,0.9
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,חלוקה משנית,18,0.833,0.9032
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,אמן מבצע,11,0.909,0.9474
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,מדינה,79,0.81,0.9474
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,יחידה מנהלית,25,0.84,0.9545
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,מופע של,29,0.931,0.9615
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,עיסוק,17,0.882,0.9655
+api_llm,llm_clean_gpt54_he_triplet_5s_nc,יחסים דיפלומטיים,15,0.133,1.0
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,שפה רשמית,19,0.0,0.0
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,שפה שבשימוש,17,0.0,0.0
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,אזרחות,16,0.562,0.6316
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,גובל עם,21,0.19,0.75
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,יחידה מנהלית,25,0.84,0.7778
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,חלק מתוך,11,0.818,0.8421
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,תת-קבוצה של,18,0.611,0.8696
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,חלוקה משנית,18,0.833,0.875
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,מדינה,79,0.81,0.9242
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,אמן מבצע,11,0.909,0.9474
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,מופע של,29,0.931,0.9615
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,עיסוק,17,0.882,0.9677
+finetuned_llm_nli,nli_clean_qwen35base_v2_template,יחסים דיפלומטיים,15,0.133,1.0
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,שפה רשמית,19,0.0,0.0
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,שפה שבשימוש,17,0.0,0.0
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,יחידה מנהלית,25,0.84,0.7778
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,אזרחות,16,0.562,0.8182
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,גובל עם,21,0.19,0.8571
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,חלוקה משנית,18,0.833,0.875
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,חלק מתוך,11,0.818,0.8889
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,מדינה,79,0.81,0.9403
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,אמן מבצע,11,0.909,0.9474
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,תת-קבוצה של,18,0.611,0.9524
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,עיסוק,17,0.882,0.9655
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,יחסים דיפלומטיים,15,0.133,1.0
+opensource_llm,llm_clean_gemma4_31b_it_he_template_2s_nc,מופע של,29,0.931,1.0

@@ -1,0 +1,7 @@
+hypothesis,mode,threshold,f1,ci_lo,ci_hi,precision,recall,accuracy,macro_f1
+basic_relation,as-published (t=0.75),0.75,0.4059,0.3457,0.4645,0.83,0.2686,0.514,0.2986
+basic_relation,best-threshold,0.05,0.5686,0.5161,0.618,0.7371,0.4628,0.566,0.4077
+template_relation,as-published (t=0.75),0.75,0.6868,0.6397,0.7299,0.8235,0.589,0.668,0.506
+template_relation,best-threshold,0.1,0.7789,0.7407,0.814,0.7946,0.7638,0.732,0.5801
+llm_relation,as-published (t=0.75),0.75,0.726,0.6825,0.7674,0.8264,0.6472,0.698,0.5354
+llm_relation,best-threshold,0.05,0.7841,0.7475,0.8183,0.7695,0.7994,0.728,0.5948

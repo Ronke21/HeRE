@@ -1,0 +1,8 @@
+{
+  "arm": "denoised",
+  "n_train": 50000,
+  "n_eval": 245,
+  "n_classes": 81,
+  "accuracy": 0.7142857142857143,
+  "macro_f1": 0.5989598350279465
+}

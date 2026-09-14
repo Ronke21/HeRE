@@ -1,0 +1,17 @@
+model,K,f1_orig,f1_adj,macro_adj,src
+xlmroberta,3,0.732,0.718,0.604,xlmroberta_k3
+xlmroberta,5,0.717,0.702,0.613,xlmroberta_k5
+xlmroberta,7,0.722,0.707,0.613,xlmroberta_k7
+xlmroberta,10,0.715,0.703,0.613,xlmroberta_k10
+mmbert,3,0.729,0.721,0.606,mmbert_k3
+mmbert,5,0.736,0.722,0.611,mmbert_k5
+mmbert,7,0.74,0.727,0.607,mmbert_k7
+mmbert,10,0.743,0.733,0.622,mmbert_k10
+neodictabert,3,0.762,0.741,0.65,neodictabert_k3_dgx
+neodictabert,5,0.761,0.74,0.641,neodictabert_k5_dgx
+neodictabert,7,0.764,0.742,0.646,neodictabert_k7
+neodictabert,10,0.754,0.735,0.644,neodictabert_k10_dgx
+me5large,3,0.68,0.663,0.559,me5large_k3
+me5large,5,0.676,0.662,0.567,me5large_k5
+me5large,7,0.68,0.663,0.565,me5large_k7
+me5large,10,0.675,0.657,0.57,me5large_k10

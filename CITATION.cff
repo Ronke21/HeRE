@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use HeRE, please cite the paper below."
+title: "HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments"
+authors:
+  - family-names: Keinan
+    given-names: Ron
+  - family-names: Cohen
+    given-names: Amir David Nissan
+  - family-names: Tsarfaty
+    given-names: Reut
+year: 2026
+conference:
+  name: "Proceedings of AACL 2026"
+repository-code: "https://github.com/Ronke21/HeRE"
+url: "https://huggingface.co/datasets/ronke21/HeRE"
+license: MIT

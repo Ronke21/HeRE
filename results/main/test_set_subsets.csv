@@ -1,0 +1,9 @@
+signal,subset,n,f1
+opensource_llm__gemma4_31b,all,500,0.844
+opensource_llm__gemma4_31b,new_predicate,203,0.776
+opensource_llm__gemma4_31b,depth_boost,97,0.944
+opensource_llm__gemma4_31b,silver_validation_200,200,0.885
+opensource_llm__gemma3_27b,all,500,0.829
+opensource_llm__gemma3_27b,new_predicate,203,0.794
+opensource_llm__gemma3_27b,depth_boost,97,0.835
+opensource_llm__gemma3_27b,silver_validation_200,200,0.874

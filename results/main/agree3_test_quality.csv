@@ -1,0 +1,5 @@
+subset,n,covered,coverage,precision,recall,f1,ci_lo,ci_hi,n_pos_in_release,n_neg_in_release
+all,500,334,0.668,0.899,0.934,0.916,0.886,0.944,189,145
+silver_validation_200,200,175,0.875,0.949,0.938,0.943,0.901,0.976,79,96
+new_predicate,203,112,0.552,0.846,0.904,0.874,0.813,0.926,78,34
+depth_boost,97,47,0.485,0.906,1.0,0.951,0.881,1.0,32,15
