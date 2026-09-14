@@ -1,0 +1,17 @@
+model,K,f1,ci_lo,ci_hi,macro,f1_aug20,src
+xlmroberta,3,0.729,0.687,0.768,0.613,0.718,xlmroberta_k3
+xlmroberta,5,0.713,0.671,0.753,0.622,0.702,xlmroberta_k5
+xlmroberta,7,0.718,0.676,0.757,0.622,0.707,xlmroberta_k7
+xlmroberta,10,0.714,0.671,0.754,0.621,0.703,xlmroberta_k10
+mmbert,3,0.732,0.69,0.77,0.614,0.721,mmbert_k3
+mmbert,5,0.733,0.691,0.77,0.619,0.722,mmbert_k5
+mmbert,7,0.737,0.696,0.775,0.616,0.727,mmbert_k7
+mmbert,10,0.743,0.702,0.781,0.631,0.733,mmbert_k10
+neodictabert,3,0.751,0.711,0.786,0.659,0.741,neodictabert_k3_dgx
+neodictabert,5,0.75,0.71,0.785,0.649,0.74,neodictabert_k5_dgx
+neodictabert,7,0.749,0.71,0.784,0.647,0.742,neodictabert_k7
+neodictabert,10,0.742,0.703,0.778,0.645,0.735,neodictabert_k10_dgx
+me5large,3,0.675,0.629,0.717,0.568,0.663,me5large_k3
+me5large,5,0.674,0.628,0.716,0.576,0.662,me5large_k5
+me5large,7,0.675,0.629,0.717,0.574,0.663,me5large_k7
+me5large,10,0.669,0.623,0.712,0.578,0.657,me5large_k10

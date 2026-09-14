@@ -12,7 +12,7 @@ Datasets are on Hugging Face: **https://huggingface.co/datasets/ronke21/HeRE** (
 |---|---|---|
 | 1 Fine-tuned NLI encoders | XLM-R-XL | 0.779 |
 | 2 Fine-tuned LLM NLI (LoRA) | Qwen3.5-35B-A3B-Base | 0.873 |
-| 3 Cross-trained predicate classifiers | NeoDictaBERT (K=7) | 0.742 |
+| 3 Cross-trained predicate classifiers | NeoDictaBERT (K=3) | 0.751 |
 | 4 Open-weights LLMs, few-shot | Gemma-4-31B-it | **0.915** |
 | 5 API LLMs, few-shot | GPT-5.4 | 0.921 |
 | Baseline: CROCODILE's XLM-R XNLI filter | as published / tuned | 0.406 / 0.784 |
