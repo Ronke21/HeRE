@@ -58,6 +58,7 @@ The HebNLI-fine-tuned denoisers behind the released signals and the per-strategy
 | XLM-RoBERTa-XL HebNLI | Strategy 1 best (F1 0.779) | https://huggingface.co/ronke21/hebnli-xlm-roberta-xl |
 | Qwen3.5-35B-A3B-Base HebNLI LoRA | Strategy 2 best (F1 0.873) | https://huggingface.co/ronke21/hebnli-qwen3.5-35b-a3b-lora |
 | Gemma-4-31B HebNLI LoRA | Strategy 2 (F1 0.849) | https://huggingface.co/ronke21/hebnli-gemma-4-31b-lora |
+| AlephBERT HebNLI | Strategy 1 (F1 0.618) | https://huggingface.co/ronke21/hebnli-alephbert |
 
 The Strategy 4 signals (Gemma-4-31B-it, Gemma-3-27B-it, DictaLM-3.0-24B-Base) are prompted public models; prompts are in the code repository.
 
