@@ -23,6 +23,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+matplotlib.rcParams["pdf.fonttype"] = 42  # TrueType, not Type 3 (ACL PDF check)
 import networkx as nx
 import pandas as pd
 

@@ -49,7 +49,7 @@ for i, (s, l, v) in enumerate(rows):
         rows[i] = (s, l, (float(sub.iloc[0].micro_f1), float(sub.iloc[0].ci_lo), float(sub.iloc[0].ci_hi)))
 for s, l, (f, lo, hi) in rows: print(f"{s:26s} {l:22s} {f:.3f} [{lo}, {hi}]")
 # ---- draw ----
-plt.rcParams.update({"font.size": 7, "font.family": "serif"})
+plt.rcParams.update({"font.size": 7, "font.family": "serif", "pdf.fonttype": 42, "ps.fonttype": 42})
 strategies = list(dict.fromkeys(s for s, _, _ in rows))
 colors = {"S1: NLI encoders": "#4c72b0", "S2: fine-tuned LLM NLI": "#dd8452", "S3: cross-trained": "#55a868", "S4: open LLMs, few-shot": "#c44e52", "S5: API LLMs": "#8172b3"}
 fig, ax = plt.subplots(figsize=(3.2, 4.4))
