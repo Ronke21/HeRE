@@ -2,8 +2,8 @@
 
 | Statistic | Value |
 |---|---|
-| Edges (evidence-linked mentions) | 1,080,606 |
-| Unique triples (s,p,o) | 860,991 |
+| Edges (evidence-linked mentions) | 1,080,605 |
+| Unique triples (s,p,o) | 860,990 |
 | Entities | 424,216 |
 | Relation types | 917 |
 | Relations with >=100 edges | 306 |

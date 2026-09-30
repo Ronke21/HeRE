@@ -43,11 +43,14 @@ def test_row_mask(df: pd.DataFrame) -> np.ndarray:
     """True for silver rows that are gold TEST-set rows (docid+subject+predicate
     +object). The test set was drawn from the silver corpus, so these rows are
     withheld from every released artifact (silver, HeRE-KG) and from the KGE
-    training graphs; 499 of the 500 test rows match a silver row."""
+    training graphs; all 500 test rows match a silver row."""
     g = pd.read_csv(TEST_CSV, encoding="utf-8-sig")
-    keys = set(g.docid.astype(str) + "||" + g.silver_join_subject.astype(str) + "||"
+    # one test row kept wiki-link markup ([[...]]) in its subject during annotation;
+    # strip it on both sides so all 500 test rows match their silver row
+    strip = lambda s: s.astype(str).str.replace(r"\[\[([^\]]*)\]\]", r"\1", regex=True)
+    keys = set(g.docid.astype(str) + "||" + strip(g.silver_join_subject) + "||"
                + g.predicate.astype(str) + "||" + g.object.astype(str))
-    k = (df["docid"].astype(str) + "||" + df["subject"].astype(str) + "||"
+    k = (df["docid"].astype(str) + "||" + strip(df["subject"]) + "||"
          + df["predicate"].astype(str) + "||" + df["object"].astype(str))
     m = k.isin(keys).to_numpy()
     print(f"[test-exclusion] {int(m.sum())} silver rows are gold test rows -> withheld")

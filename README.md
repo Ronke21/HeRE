@@ -2,9 +2,9 @@
 
 Code, gold data and result files for **HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments** (Keinan, Cohen, Tsarfaty; AACL 2026).
 
-HeRE turns the noisy distant-supervision alignment between Hebrew Wikipedia and Wikidata (3.12M candidate passage-triple tuples, built with CROCODILE) into a relation-extraction resource by *denoising* it: five families of denoisers are compared on a 500-example dual-annotated gold validation set, the best open-weights configurations are applied to the full corpus, and the unanimous vote of three of them (`agree3`) is released as a 1.49M-row silver dataset together with the raw score of every deployed signal, a held-out gold test set, and a provenance-grounded knowledge graph (HeRE-KG).
+HeRE turns the noisy distant-supervision alignment between Hebrew Wikipedia and Wikidata (3.1M candidate passage-triple tuples, built with CROCODILE) into a relation-extraction resource by *denoising* it: five families of denoisers are compared on a 500-example dual-annotated gold validation set, the best open-weights configurations are applied to the full corpus, and the unanimous vote of three of them (`agree3`) is released as a 1.49M-row silver dataset together with the raw score of every deployed signal, a held-out gold test set, and a provenance-grounded knowledge graph (HeRE-KG).
 
-Datasets are on Hugging Face: **https://huggingface.co/datasets/ronke21/HeRE** (see `data/README.md`).
+The camera-ready paper is in `paper/HeRE_AACL2026.pdf`. Datasets are on Hugging Face: **https://huggingface.co/datasets/ronke21/HeRE** (see `data/README.md`).
 
 ## Headline numbers (gold validation set, binary F1, adjudicated labels)
 
@@ -68,7 +68,7 @@ The Strategy 4 signals (Gemma-4-31B-it, Gemma-3-27B-it, DictaLM-3.0-24B-Base) ar
 2. **Preparation.** `src/prepare_data/text_cleaning.py` (markup removal, entity-field normalisation) and `prepare_v3_data.py` produce the gold and silver inputs with the three hypothesis variants (basic, template, LLM).
 3. **NLI backbones.** `src/nli_finetuning/` fine-tunes the encoders (batch 64, 8,000 steps) and LoRA decoders (rank 16, batch 16) on HebNLI.
 4. **Gold benchmark.** One script per strategy in `src/denoise_gold/`; `src/analysis/stage0_ci_and_macro.py` turns the predictions into the tables with bootstrap CIs.
-5. **Silver corpus.** `src/pipeline/watcher.py` schedules the units in `units.py` over the available GPUs; every unit appends one score per line and resumes from its own output. `build_silver_v3.py` merges the signals; `src/analysis/build_here_kg.py` builds HeRE-KG and `build_hf_release.py` the Hugging Face files, both withholding the 499 gold-test rows.
+5. **Silver corpus.** `src/pipeline/watcher.py` schedules the units in `units.py` over the available GPUs; every unit appends one score per line and resumes from its own output. `build_silver_v3.py` merges the signals; `src/analysis/build_here_kg.py` builds HeRE-KG and `build_hf_release.py` the Hugging Face files, both withholding all 500 gold-test rows.
 6. **Downstream.** `src/analysis/kge_ablation.py --variant {raw,denoised,control,weighted} --seed N`.
 
 Absolute machine paths in the scripts were replaced by `/path/to/...`; set them (mainly in `src/pipeline/paths.py`, `units.py` and the checkpoint constants at the top of the denoising scripts) before running. Model checkpoints, the CROCODILE output and the silver corpus are not in this repository.
