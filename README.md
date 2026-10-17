@@ -71,7 +71,7 @@ The Strategy 4 signals (Gemma-4-31B-it, Gemma-3-27B-it, DictaLM-3.0-24B-Base) ar
 5. **Silver corpus.** `src/pipeline/watcher.py` schedules the units in `units.py` over the available GPUs; every unit appends one score per line and resumes from its own output. `build_silver_v3.py` merges the signals; `src/analysis/build_here_kg.py` builds HeRE-KG and `build_hf_release.py` the Hugging Face files, both withholding all 500 gold-test rows.
 6. **Downstream.** `src/analysis/kge_ablation.py --variant {raw,denoised,control,weighted} --seed N`.
 
-Absolute machine paths in the scripts were replaced by `/path/to/...`; set them (mainly in `src/pipeline/paths.py`, `units.py` and the checkpoint constants at the top of the denoising scripts) before running. Model checkpoints, the CROCODILE output and the silver corpus are not in this repository.
+Absolute machine paths in the scripts were replaced by `/path/to/...`; set them (mainly in `src/pipeline/paths.py`, `units.py` and the checkpoint constants at the top of the denoising scripts) before running. The fine-tuned checkpoints used for the released signals are on the Hugging Face Hub (collection linked above); the CROCODILE output and the full silver corpus are not in this repository (the published silver release is on the Hub).
 
 ## License and citation
 
