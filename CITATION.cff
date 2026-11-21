@@ -8,9 +8,42 @@ authors:
     given-names: Amir David Nissan
   - family-names: Tsarfaty
     given-names: Reut
-year: 2026
-conference:
-  name: "Proceedings of AACL 2026"
 repository-code: "https://github.com/Ronke21/HeRE"
 url: "https://huggingface.co/datasets/ronke21/HeRE"
 license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments"
+  authors:
+    - family-names: Keinan
+      given-names: Ron
+    - family-names: Cohen
+      given-names: Amir David Nissan
+    - family-names: Tsarfaty
+      given-names: Reut
+  collection-title: "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  collection-type: proceedings
+  editors:
+    - family-names: Zhang
+      given-names: Yue
+    - family-names: Xu
+      given-names: Ruifeng
+    - family-names: Purwarianti
+      given-names: Ayu
+    - family-names: Rong
+      given-names: Tong
+    - family-names: Suzuki
+      given-names: Jun
+  conference:
+    name: "AACL 2026"
+    city: Hengqin
+    country: CN
+  publisher:
+    name: Association for Computational Linguistics
+  month: 11
+  year: 2026
+  start: 5311
+  end: 5329
+  doi: "10.18653/2026.aacl-long.237"
+  url: "https://aclanthology.org/2026.aacl-long.237/"
+  isbn: "979-8-89176-439-2"

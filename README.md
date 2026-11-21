@@ -1,6 +1,6 @@
 # HeRE: Hebrew Relation Extraction benchmark
 
-Code, gold data and result files for **HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments** (Keinan, Cohen, Tsarfaty; AACL 2026).
+Code, gold data and result files for **HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments** (Keinan, Cohen, Tsarfaty; AACL 2026, [ACL Anthology](https://aclanthology.org/2026.aacl-long.237/)).
 
 HeRE turns the noisy distant-supervision alignment between Hebrew Wikipedia and Wikidata (3.1M candidate passage-triple tuples, built with CROCODILE) into a relation-extraction resource by *denoising* it: five families of denoisers are compared on a 500-example dual-annotated gold validation set, the best open-weights configurations are applied to the full corpus, and the unanimous vote of three of them (`agree3`) is released as a 1.49M-row silver dataset together with the raw score of every deployed signal, a held-out gold test set, and a provenance-grounded knowledge graph (HeRE-KG).
 
@@ -76,3 +76,30 @@ Absolute machine paths in the scripts were replaced by `/path/to/...`; set them 
 ## License and citation
 
 Code: MIT. Text data: Hebrew Wikipedia, CC BY-SA 4.0. Triples: Wikidata, CC0. See `CITATION.cff`.
+
+## Citation
+
+Keinan, R., Cohen, A. D. N., and Tsarfaty, R. (2026). HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments. In *Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)*, pages 5311-5329, Hengqin, China. Association for Computational Linguistics. https://aclanthology.org/2026.aacl-long.237/
+
+```bibtex
+@inproceedings{keinan-etal-2026-novel,
+    title = "{H}e{RE}: A Novel Benchmark for {H}ebrew Relation Extraction via {LLM}-Guided Denoising of Knowledge Graph Alignments",
+    author = "Keinan, Ron  and
+      Cohen, Amir David Nissan  and
+      Tsarfaty, Reut",
+    editor = "Zhang, Yue  and
+      Xu, Ruifeng  and
+      Purwarianti, Ayu  and
+      Rong, Tong  and
+      Suzuki, Jun",
+    booktitle = "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the {A}sia-Pacific Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = nov,
+    year = "2026",
+    address = "Hengqin, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.aacl-long.237/",
+    doi = "10.18653/2026.aacl-long.237",
+    pages = "5311--5329",
+    ISBN = "979-8-89176-439-2"
+}
+```
